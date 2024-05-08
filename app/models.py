@@ -33,4 +33,4 @@ class EncryptedFile(DateTimeFields):
     """
     Encrypted file model
     """
-    file = models.FileField(upload_to='upload_encrypted_file')
+    file = models.FileField(upload_to=upload_encrypted_file)

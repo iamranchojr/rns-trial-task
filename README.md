@@ -1,13 +1,14 @@
 # rns-trial-task
 RNS Trial Task: A Django Rest API that accepts a file to upload, creates a new key, 
 encrypts the file and stores it in AWS S3. It also provides endpoints to list all encrypted files, 
-delete an encrypted file and decrypt encrypted file.
+delete an encrypted file and decrypt encrypted file. It encrypts files using the Fernet (symmetric encryption)
+available in the cryptography module.
 
 ### API Documentation
 A Postman documentation of the API can be found [here](https://postman.com/link)
 
 ### Test environment
-The API is hosted on Heroku for testing purposes. Click [here](https://postman.com/link) to access it 
+The API is hosted on Heroku for testing purposes. Click [here](https://rns-trial-task-7a333c830762.herokuapp.com/) to access it 
 
 ### Getting started
 Install docker desktop locally on your machine
