@@ -43,6 +43,7 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     '127.0.0.1',
     'localhost',
+    'rns-trial-task-7a333c830762.herokuapp.com'
 ]
 
 

@@ -1,6 +1,9 @@
-from django.apps import AppConfig
+from django.apps import AppConfig as BaseAppConfig
 
 
-class AppConfig(AppConfig):
-    default_auto_field = "django.db.models.BigAutoField"
-    name = "app"
+class AppConfig(BaseAppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'app'
+
+    def ready(self):
+        import signals
