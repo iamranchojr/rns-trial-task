@@ -36,4 +36,4 @@ class EncryptedFile(DateTimeFields):
     file = models.FileField(upload_to=upload_encrypted_file)
 
     def __str__(self):
-        return f'{self.file.name}, uploaded at: {self.created_at}'
+        return f'{self.file.name.split("/")[-1]}, uploaded at: {self.created_at}'
